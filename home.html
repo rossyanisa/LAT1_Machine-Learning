@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+ <html>
+<head>
+    <link rel="stylesheet"
+    href="https://maxdc.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.mon.css" integrity="='sha384-BVYiiSIFeKldGmJRAkycuHAHRg320mUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"crossorigin="anonymous">
+    <title>Profit Prediction</title>
+    </head>
+
+    <body>
+        <h1><div style="text-align:center"><font color="blue">Prediksi profit dari pengeluaran startup</font></div></h1>
+        <hr>
+        </br>
+        <h2><div style="text-align:center">Masukkan nilai untuk R&D Spend, Administratioin Spend, dan Marketing Spend</div></h2>
+        </br>
+        <div class='container'>
+         <div class='row'>
+          <div class='col-6'>
+            <form method="POST" action="/predict">
+              <div class="form-group">
+                <label  for="RnD_Spend"><p class="font=-weight-bold">RnD_Spend</p></label>
+                <input type="text" name="RnD_Spend">
+                <small  id="RnDSpendHelp"   class="form-text text-muted">Masukkan nilai Rnd Spend (dalam dollar)</small>
+              </div>
+
+              <div class="form-group">
+                <label  for="Admin_Spend"><p    class="font-weight-bold">Admin_Spend</p></label>
+                <input type="text"  name="Admin_Spend">
+                <small  id="AdminSpendHelp" class="form-text    text-muted">Masukkan Nilai Administratioin Spend (dalam dollar</small>
+              </div>
+              <div class="form-group">
+                <label  for="Market_Spend"><p    class="font-weight-bold">Market_Spend</p></label>
+                <input type="text"  name="Market_Spend">
+                <small  id="AdminSpendHelp" class="form-text    text-muted">Masukkan Nilai Marketing Spend (dalam dollar</small>
+              </div>
+
+              <input    class='btn  btn-primary'    type='submit'value='Submit'>
+            </form>
+          </div>
+         </div>
+        </div>
+    </body>
+ </html>
